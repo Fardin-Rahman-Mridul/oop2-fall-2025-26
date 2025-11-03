@@ -1,0 +1,8 @@
+G:\Versity\10TH semester(Fall)\OOP2\tasks\labtask3sln\labtask3\bin\Debug\labtask3.exe.config
+G:\Versity\10TH semester(Fall)\OOP2\tasks\labtask3sln\labtask3\bin\Debug\labtask3.exe
+G:\Versity\10TH semester(Fall)\OOP2\tasks\labtask3sln\labtask3\bin\Debug\labtask3.pdb
+G:\Versity\10TH semester(Fall)\OOP2\tasks\labtask3sln\labtask3\obj\Debug\labtask3.csproj.AssemblyReference.cache
+G:\Versity\10TH semester(Fall)\OOP2\tasks\labtask3sln\labtask3\obj\Debug\labtask3.csproj.SuggestedBindingRedirects.cache
+G:\Versity\10TH semester(Fall)\OOP2\tasks\labtask3sln\labtask3\obj\Debug\labtask3.csproj.CoreCompileInputs.cache
+G:\Versity\10TH semester(Fall)\OOP2\tasks\labtask3sln\labtask3\obj\Debug\labtask3.exe
+G:\Versity\10TH semester(Fall)\OOP2\tasks\labtask3sln\labtask3\obj\Debug\labtask3.pdb
