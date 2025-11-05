@@ -1,0 +1,8 @@
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Project\MortgageCalculatorsln\MortgageCalculator\bin\Debug\MortgageCalculator.exe.config
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Project\MortgageCalculatorsln\MortgageCalculator\bin\Debug\MortgageCalculator.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Project\MortgageCalculatorsln\MortgageCalculator\bin\Debug\MortgageCalculator.pdb
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Project\MortgageCalculatorsln\MortgageCalculator\obj\Debug\MortgageCalculator.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Project\MortgageCalculatorsln\MortgageCalculator\obj\Debug\MortgageCalculator.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Project\MortgageCalculatorsln\MortgageCalculator\obj\Debug\MortgageCalculator.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Project\MortgageCalculatorsln\MortgageCalculator\obj\Debug\MortgageCalculator.pdb
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Project\MortgageCalculatorsln\MortgageCalculator\obj\Debug\MortgageCalculator.exe.config
