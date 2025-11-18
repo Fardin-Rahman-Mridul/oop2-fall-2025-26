@@ -9,139 +9,122 @@ using System.Diagnostics.Eventing.Reader;
 
 namespace MortgageCalculator
 {
-    internal class Program
+    class UserData
     {
-        
+        public double Salary { get; set; }
+        public double CreditScore { get; set; }
+        public bool CriminalRecord { get; set; }
+        public double LoanAmount { get; set; }
+
+        public UserData(double salary, double creditScore, bool criminalRecord, double loanAmount)
+        {
+            Salary = salary;
+            CreditScore = creditScore;
+            CriminalRecord = criminalRecord;
+            LoanAmount = loanAmount;
+        }
+    }
+
+    class LoanCalculator
+    {
+        public double AnnualInterestRate { get; set; }
+        public int LoanPeriodYears { get; set; }
+
+        public LoanCalculator(double annualRate, int years)
+        {
+            AnnualInterestRate = annualRate;
+            LoanPeriodYears = years;
+        }
+
+        public double MonthlyPayment(double loanAmount)
+        {
+            double monthlyRate = (AnnualInterestRate / 100) / 12;
+            int totalMonths = LoanPeriodYears * 12;
+
+            return loanAmount * monthlyRate * Math.Pow(1 + monthlyRate, totalMonths)
+                   / (Math.Pow(1 + monthlyRate, totalMonths) - 1);
+        }
+    }
+
+    class InputManager
+    {
+        public static double GetDouble(string message)
+        {
+            while (true)
+            {
+                Console.Write(message);
+                if (double.TryParse(Console.ReadLine(), out double value))
+                    return value;
+
+                Console.WriteLine("Invalid input. Enter numbers only!");
+            }
+        }
+        public static bool GetBool(string message)
+        {
+            while (true)
+            {
+                Console.Write(message);
+                if (bool.TryParse(Console.ReadLine(), out bool value))
+                    return value;
+
+                Console.WriteLine("Invalid input. Enter true/false!");
+            }
+        }
+    }
+    internal class Program
+    { 
         static void Main(string[] args)
         {
-            double salary = 0f;
-            double credit_score = 0f;
-            bool criminal_records = false;
+            Console.WriteLine("=== Mortgage Calculator (Bangladesh) ===");
 
-            Console.WriteLine("===Mortgage Calculator (Bangladesh)===");
+            double salary = InputManager.GetDouble("Enter your monthly salary: ");
+            double creditScore = InputManager.GetDouble("Enter your credit score (0-500): ");
 
-            while (true)
+            if (creditScore < 1 || creditScore > 500)
             {
-                Console.Write("Enter your monthly salary: ");
-                string salaryinput = Console.ReadLine() ?? string.Empty.Trim();
-                if(double.TryParse(salaryinput, out salary))
-                {
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input. Please enter numerical values.");
-                }
-                
-
-                
+                Console.WriteLine("You are not eligible for the loan.");
+                return;
             }
 
-            while (true)
-            {
-                Console.Write("Enter your credit score (0-500): ");
-                string credit_scoreinput = Console.ReadLine() ?? string.Empty.Trim();
-                if (double.TryParse(credit_scoreinput, out credit_score))
-                {
-                    if(credit_score == 0 || credit_score <= 500)
-                    
-                        break ;
-                    
+            bool criminalRecord = InputManager.GetBool("Do you have any criminal record? (true/false): ");
 
-                    else
-                    {
-                        Console.WriteLine("You are not eligible for the loan");
-                    }
-                    return;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input. Please enter numerical values.");
-                }
+            if (criminalRecord)
+            {
+                Console.WriteLine("You are not eligible for the loan.");
+                return;
             }
 
+            double loanAmount = InputManager.GetDouble("Enter loan amount: ");
 
-            while(true)
+            if (loanAmount > 2 * salary)
             {
-                Console.Write("Do you have any criminal record? (true/false): ");
-                string criminal_recordsinput = Console.ReadLine() ?? string.Empty.Trim();
-                if(bool.TryParse(criminal_recordsinput, out criminal_records))
-                {
-                    if (criminal_records == true)
-                    {
-                        Console.WriteLine("You are not eligible for the loan");
-                         return;
-                    }
-                    
-
-                        break;
-
-                }
-                else
-                {
-                    Console.WriteLine("Please, write true or false");
-                }
-                
-
-               
+                Console.WriteLine("You are not eligible. Loan exceeds 2 times your salary.");
+                return;
             }
-            
-            Console.Write("Enter loan amount: ");
-            double loanAmount = Convert.ToDouble(Console.ReadLine());
-            while (true)
-            {
-                if (loanAmount <= 2 * salary)
-                {
-                    Console.WriteLine("You are elegible for the loan");
-                    break;
-                }
 
-                else
-                {
-                    Console.WriteLine("You are not elegible for the loan,because it is more than 2 times than your salary ");
-                    return;
-                }
-                
-                
-            }
-            
-
-
-                Console.Write("Enter annual interest rate (in %): ");
-            double annualInterestRate = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Enter loan period (in years): ");
-            int loanPeriodYears = Convert.ToInt32(Console.ReadLine());
+            UserData user = new UserData(salary, creditScore, criminalRecord, loanAmount);
 
             
-            double monthlyInterestRate = (annualInterestRate / 100) / 12;
+            double annualRate = InputManager.GetDouble("Enter annual interest rate (%): ");
+            int years = (int)InputManager.GetDouble("Enter loan period (years): ");
 
-           
-            int totalMonths = loanPeriodYears * 12;
+            LoanCalculator calculator = new LoanCalculator(annualRate, years);
+            double monthlyPayment = calculator.MonthlyPayment(user.LoanAmount);
 
-            
-            double monthlyPayment = loanAmount * monthlyInterestRate * Math.Pow(1 + monthlyInterestRate, totalMonths)
-                                    / (Math.Pow(1 + monthlyInterestRate, totalMonths) - 1);
-
-            
+            int totalMonths = years * 12;
             double totalPaid = monthlyPayment * totalMonths;
-            double totalInterest = totalPaid - loanAmount;
+            double totalInterest = totalPaid - user.LoanAmount;
 
-
-            
-            CultureInfo bdCulture = new CultureInfo("bn-BD");
+            CultureInfo bd = new CultureInfo("bn-BD");
 
             Console.WriteLine("\n=== Mortgage Summary ===");
-
-            Console.WriteLine($"\nMonthly Salary: {salary.ToString("C", bdCulture)}");
-            Console.WriteLine($"Credit Score: {credit_score.ToString("C", bdCulture)}");
-            Console.WriteLine($"Criminal Record: {criminal_records}");
-            Console.WriteLine($"Loan Amount: {loanAmount.ToString("C", bdCulture)}");
-            Console.WriteLine($"Monthly Payment: {monthlyPayment.ToString("C", bdCulture)}");
-            Console.WriteLine($"Total Paid: {totalPaid.ToString("C", bdCulture)}");
-            Console.WriteLine($"Total Interest: {totalInterest.ToString("C", bdCulture)}");
-
-
+            Console.WriteLine($"Monthly Salary: {user.Salary.ToString("C", bd)}");
+            Console.WriteLine($"Credit Score: {user.CreditScore}");
+            Console.WriteLine($"Criminal Record: {user.CriminalRecord}");
+            Console.WriteLine($"Loan Amount: {user.LoanAmount.ToString("C", bd)}");
+            Console.WriteLine($"Monthly Payment: {monthlyPayment.ToString("C", bd)}");
+            Console.WriteLine($"Total Paid: {totalPaid.ToString("C", bd)}");
+            Console.WriteLine($"Total Interest: {totalInterest.ToString("C", bd)}");
 
         }
     }
