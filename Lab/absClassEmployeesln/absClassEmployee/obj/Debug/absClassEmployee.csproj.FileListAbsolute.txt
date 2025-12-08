@@ -1,0 +1,7 @@
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassEmployeesln\absClassEmployee\bin\Debug\absClassEmployee.exe.config
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassEmployeesln\absClassEmployee\bin\Debug\absClassEmployee.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassEmployeesln\absClassEmployee\bin\Debug\absClassEmployee.pdb
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassEmployeesln\absClassEmployee\obj\Debug\absClassEmployee.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassEmployeesln\absClassEmployee\obj\Debug\absClassEmployee.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassEmployeesln\absClassEmployee\obj\Debug\absClassEmployee.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassEmployeesln\absClassEmployee\obj\Debug\absClassEmployee.pdb

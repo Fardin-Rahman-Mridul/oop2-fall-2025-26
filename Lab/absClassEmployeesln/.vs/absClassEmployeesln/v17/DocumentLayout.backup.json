@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\Developer\\oop2-fall-2025-26\\Lab\\absClassEmployeesln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{907DF29F-5778-458A-84C6-61E304D4AA29}|absClassEmployee\\absClassEmployee.csproj|c:\\users\\user\\documents\\developer\\oop2-fall-2025-26\\lab\\absclassemployeesln\\absclassemployee\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907DF29F-5778-458A-84C6-61E304D4AA29}|absClassEmployee\\absClassEmployee.csproj|solutionrelative:absclassemployee\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\Developer\\oop2-fall-2025-26\\Lab\\absClassEmployeesln\\absClassEmployee\\Program.cs",
+              "RelativeDocumentMoniker": "absClassEmployee\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\Developer\\oop2-fall-2025-26\\Lab\\absClassEmployeesln\\absClassEmployee\\Program.cs",
+              "RelativeToolTip": "absClassEmployee\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwC4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T14:55:38.987Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

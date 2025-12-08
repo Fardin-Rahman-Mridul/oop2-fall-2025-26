@@ -1,0 +1,7 @@
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassMembersln\absClassMember\obj\Debug\absClassMember.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassMembersln\absClassMember\obj\Debug\absClassMember.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassMembersln\absClassMember\bin\Debug\absClassMember.exe.config
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassMembersln\absClassMember\bin\Debug\absClassMember.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassMembersln\absClassMember\bin\Debug\absClassMember.pdb
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassMembersln\absClassMember\obj\Debug\absClassMember.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\absClassMembersln\absClassMember\obj\Debug\absClassMember.pdb
