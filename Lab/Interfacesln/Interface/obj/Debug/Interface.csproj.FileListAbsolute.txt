@@ -1,0 +1,7 @@
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Interfacesln\Interface\bin\Debug\Interface.exe.config
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Interfacesln\Interface\bin\Debug\Interface.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Interfacesln\Interface\bin\Debug\Interface.pdb
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Interfacesln\Interface\obj\Debug\Interface.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Interfacesln\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Interfacesln\Interface\obj\Debug\Interface.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Interfacesln\Interface\obj\Debug\Interface.pdb

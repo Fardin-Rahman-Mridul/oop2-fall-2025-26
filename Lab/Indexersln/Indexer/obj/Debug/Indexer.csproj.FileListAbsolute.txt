@@ -1,0 +1,8 @@
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Indexersln\Indexer\bin\Debug\Indexer.exe.config
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Indexersln\Indexer\bin\Debug\Indexer.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Indexersln\Indexer\bin\Debug\Indexer.pdb
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Indexersln\Indexer\obj\Debug\Indexer.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Indexersln\Indexer\obj\Debug\Indexer.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Indexersln\Indexer\obj\Debug\Indexer.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Indexersln\Indexer\obj\Debug\Indexer.pdb
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Indexersln\Indexer\obj\Debug\Indexer.exe.config
