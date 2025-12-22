@@ -1,0 +1,8 @@
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Delegatessln\Delegates\bin\Debug\Delegates.exe.config
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Delegatessln\Delegates\bin\Debug\Delegates.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Delegatessln\Delegates\bin\Debug\Delegates.pdb
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Delegatessln\Delegates\obj\Debug\Delegates.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Delegatessln\Delegates\obj\Debug\Delegates.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Delegatessln\Delegates\obj\Debug\Delegates.exe
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Delegatessln\Delegates\obj\Debug\Delegates.pdb
+C:\Users\USER\Documents\Developer\oop2-fall-2025-26\Lab\Delegatessln\Delegates\obj\Debug\Delegates.exe.config
